@@ -1,10 +1,10 @@
-&nbsp;
-
-📄 Document Signature App
 
 
+<h1 align="center"># 📄 Document Signature App
 
-About the Project
+
+
+## About the Project
 
 
 
@@ -43,8 +43,7 @@ These controls prevent:
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 
-
-&nbsp;Project Summary
+## Project Summary
 
 
 
@@ -88,7 +87,7 @@ PDF Processing (Apache PDFBox)
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-&nbsp;Introduction
+## Introduction
 
 In modern digital environments, organizations increasingly rely on automated systems to manage document approvals and signatures. As businesses shift toward remote operations and distributed teams, the need for secure, paperless, and trackable document workflows has become critical.
 
@@ -136,11 +135,11 @@ This project addresses these issues by implementing:
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-&nbsp;Tech Stack
+## Tech Stack
 
 
 
-🔹 Frontend
+## 🔹 Frontend
 
 •	React.js
 
@@ -172,7 +171,7 @@ The frontend handles:
 
 
 
-🔹 Backend
+## 🔹 Backend
 
 •	Spring Boot
 
@@ -204,7 +203,7 @@ The backend performs:
 
 
 
-🔹 Database
+## 🔹 Database
 
 •	PostgreSQL
 
@@ -218,7 +217,7 @@ The database layer provides persistent storage and ensures relational integrity 
 
 •	Audit Logs
 
-Design Principles:
+### Design Principles:
 
 •	Normalized relational schema
 
@@ -230,7 +229,7 @@ Design Principles:
 
 •	Timestamp-based auditing
 
-Relationship Overview:
+### Relationship Overview:
 
 •	One User → Many Documents
 
@@ -238,7 +237,7 @@ Relationship Overview:
 
 •	One Document → Many Audit Logs
 
-The database ensures:
+### The database ensures:
 
 •	Data consistency
 
@@ -252,7 +251,7 @@ Each signing action updates multiple tables within a transaction to ensure atomi
 
 
 
-PostgreSQL ensures:
+### PostgreSQL ensures:
 
 •	ACID compliance
 
@@ -264,7 +263,7 @@ PostgreSQL ensures:
 
 
 
-🔹 File Handling
+## 🔹 File Handling
 
 •	Local File System Storage
 
@@ -272,7 +271,7 @@ PostgreSQL ensures:
 
 The file handling subsystem manages PDF storage and signature embedding.
 
-Storage Strategy:
+### Storage Strategy:
 
 •	Original PDFs stored in local file system
 
@@ -284,7 +283,7 @@ Storage Strategy:
 
 
 
-Signature Processing Flow:
+### Signature Processing Flow:
 
 1\.	User creates signature (text-based)
 
@@ -302,7 +301,7 @@ Signature Processing Flow:
 
 
 
-Memory \& Performance Handling:
+### Memory \& Performance Handling:
 
 •	Object URL cleanup prevents memory leaks
 
@@ -314,11 +313,11 @@ Memory \& Performance Handling:
 
 
 
-Use Cases
+## Use Cases
 
 
 
-1️ Use Case: User Authentication (Login)
+### 1️ Use Case: User Authentication (Login)
 
 This use case allows a registered user to securely access the system using valid credentials.
 
@@ -332,7 +331,7 @@ This ensures secure, stateless session management across the application.
 
 
 
-2️ Use Case: Upload Document
+### 2️ Use Case: Upload Document
 
 This use case enables an authenticated user to upload a PDF document to the system.
 
@@ -346,7 +345,7 @@ An audit entry is created to record the upload action.
 
 
 
-3️  Use Case: Assign Multi-Signer Workflow
+### 3️ Use Case: Assign Multi-Signer Workflow
 
 This use case defines the structured signing order for a document.
 
@@ -360,7 +359,7 @@ This guarantees controlled and traceable approval progression.
 
 
 
-4️ Use Case: Sign Document
+### 4️ Use Case: Sign Document
 
 This use case allows the active signer to digitally sign a document.
 
@@ -374,7 +373,7 @@ After signing, the workflow automatically progresses to the next signer.
 
 
 
-5️ Use Case: View Documents
+### 5️ Use Case: View Documents
 
 This use case allows users to view documents they uploaded or are assigned to sign.
 
@@ -388,7 +387,7 @@ The page provides options to preview, sign, or delete documents.
 
 
 
-6️ Use Case: View Audit History
+### 6️ Use Case: View Audit History
 
 This use case displays the complete activity timeline of a document.
 
@@ -402,7 +401,7 @@ Users can track the full lifecycle of the document.
 
 
 
-7️ Use Case: Download Signed Document
+### 7️ Use Case: Download Signed Document
 
 This use case allows authorized users to download the signed PDF document.
 
@@ -416,7 +415,7 @@ This ensures both accessibility and traceability of document distribution.
 
 
 
-8️ Use Case: Delete Document
+### 8️ Use Case: Delete Document
 
 This use case enables the document owner to delete a document.
 
@@ -430,7 +429,7 @@ An audit entry is created to record the deletion action.
 
 
 
-9️ Use Case: Enforce Sequential Signing
+### 9️ Use Case: Enforce Sequential Signing
 
 This system-level use case ensures workflow integrity.
 
@@ -448,9 +447,9 @@ This mechanism prevents unauthorized or out-of-order signing.
 
 
 
-Features with Screenshots
+## Features with Screenshots
 
-✅ Register (User Registration)
+## ✅ Register (User Registration)
 
 <img src="./screenshots/auth/RegisterPage.png" width="800"/>
 
@@ -458,7 +457,7 @@ Features with Screenshots
 
 
 
-🔎 Description
+### 🔎 Description
 
 The Register feature allows new users to create an account in the system. This is the first step before accessing any protected functionality.
 
@@ -466,7 +465,7 @@ Registration ensures that only verified users can participate in document workfl
 
 
 
-⚙ Feature Functionality
+### ⚙ Feature Functionality
 
 
 
@@ -490,7 +489,7 @@ After successful registration, the user can proceed to login.
 
 
 
-✅ Login (User Authentication)
+## ✅ Login (User Authentication)
 
 <img src="./screenshots/auth/LoginPage.png" width="800"/>
 
@@ -498,7 +497,7 @@ After successful registration, the user can proceed to login.
 
 
 
-🔎 Description
+### 🔎 Description
 
 The Login feature allows registered users to authenticate themselves and gain access to the application.
 
@@ -506,7 +505,7 @@ Login ensures secure system access, prevents unauthorized operations, and protec
 
 
 
-⚙ Feature Functionality
+### ⚙ Feature Functionality
 
 
 
@@ -530,7 +529,7 @@ All subsequent API requests include the token for authorization.
 
 
 
-🔐 Authentication Flow
+### 🔐 Authentication Flow
 
 
 
@@ -558,13 +557,13 @@ Token sent in Authorization header for all secure requests.
 
 
 
-📊 Dashboard Page
+## 📊 Dashboard Page
 
 <img src="./screenshots/dashboard/Dashboard.png" width="800"/>
 
 
 
-🔎 Overview
+### 🔎 Overview
 
 The Dashboard serves as the central navigation hub of the Document Signature Workflow System.
 
@@ -598,7 +597,7 @@ Offer secure logout functionality
 
 
 
-📄 Upload Document Page
+## 📄 Upload Document Page
 
 <img src="./screenshots/document/UploadDocument.png" width="800"/> 
 
@@ -610,7 +609,7 @@ Offer secure logout functionality
 
 
 
-🔎 Overview
+### 🔎 Overview
 
 his screen allows the user to upload a PDF document and define the signing workflow.
 
@@ -644,11 +643,11 @@ The Upload Page is designed to:
 
 
 
-📂 My Documents Page
+## 📂 My Documents Page
 
-<img src="./screenshots/document/DocumentPage.png" width="800"/>
+<img src="./screenshots/document/UploadedDocumentSuccessfully.png" width="800"/>
 
-🔎 Overview
+### 🔎 Overview
 
 The My Documents page displays all documents associated with the logged-in user.
 
@@ -676,9 +675,9 @@ The My Documents page allows users to:
 
 
 
-📌 Status Filter Buttons (ALL)
+### 📌 Status Filter Buttons (ALL)
 
-<img src="./screenshots/dashboard/StatusFilterAll.png" width="800"/>
+<img src="./screenshots/dashboard/StatusFilterButtonAll.png" width="800"/>
 
 
 
@@ -696,9 +695,9 @@ Provides a complete overview of the user’s document history.
 
 
 
-📌 Status Filter Buttons (PENDING)
+### 📌 Status Filter Buttons (PENDING)
 
-<img src="./screenshots/dashboard/StatusFilterPending.png" width="800"/>
+<img src="./screenshots/dashboard/StatusFilterButtonPending.png" width="800"/>
 
 
 
@@ -718,9 +717,9 @@ Helps users quickly identify documents that require action.
 
 
 
-📌 Status Filter Buttons (SIGNED)
+### 📌 Status Filter Buttons (SIGNED)
 
-<img src="./screenshots/dashboard/StatusFilterSigned.png" width="800"/>
+<img src="./screenshots/dashboard/StatusFilterButtonSigned.png" width="800"/>
 
 
 
@@ -738,7 +737,7 @@ Allows users to preview or download finalized documents.
 
 
 
-🚪 Logout Button
+## 🚪 Logout Button
 
 <img src="./screenshots/dashboard/LogoutButton.png" width="800"/>
 
@@ -748,7 +747,7 @@ Allows users to securely exit the system.
 
 
 
-📄 Document Preview Page
+## 📄 Document Preview Page
 
 <img src="./screenshots/document/PreviewButton.png" width="800"/> 
 
@@ -756,7 +755,7 @@ Allows users to securely exit the system.
 
 
 
-🔎 Overview
+### 🔎 Overview
 
 The Document Preview page allows users to view the selected PDF document and perform signing actions.
 
@@ -780,7 +779,7 @@ The Preview Page is designed to:
 
 
 
-✍ Place \& Sign Button
+## ✍ Place \& Sign Button
 
 <img src="./screenshots/signature/PlaceAndSignButton.png" width="800"/>
 
@@ -790,17 +789,16 @@ Allows the assigned signer to confirm and embed their signature.
 
 
 
-📥 Download Signed PDF Button
+## 📥 Download Signed PDF Button
 
-<img src="./screenshots/document/DownloadDocument.png" width="800"/>
-
+<img src="./screenshots/signature/DownloadDocument.png" width="800"/> 
 
 
 Allows users to download the signed document.
 
 
 
-🕵 Audit Timeline Panel
+## 🕵 Audit Timeline Panel
 
 <img src="./screenshots/audit/AuditTimeline.png" width="800"/>
 
@@ -810,11 +808,11 @@ Displays document activity history including upload, sign, and download events.
 
 
 
-✍️ Sign Button \& Signature Pad Feature
+## ✍️ Sign Button \& Signature Pad Feature
 
 🔘 Sign Button
 
-<img src="./screenshots/document/SignButton.png" width="800"/>
+<img src="./screenshots/document/UploadedDocumentSuccessfully.png" width="800"/>
 
 
 
@@ -822,7 +820,7 @@ Allows eligible signers to initiate the digital signing process.
 
 
 
-🖊 Signature Pad
+## 🖊 Signature Pad
 
 <img src="./screenshots/signature/SignaturePad.png" width="800"/>
 
@@ -831,8 +829,7 @@ Allows eligible signers to initiate the digital signing process.
 Allows users to create a digital signature using styled text.
 
 
-
-🖱 Sign Document (Drag \& Drop Signature)
+## 🖱 Sign Document (Drag \& Drop Signature)
 
 <img src="./screenshots/signature/DragAndDrop.png" width="800"/>
 <img src="./screenshots/signature/SignatureOneAddeddSuccessfully.png" width="800"/>
@@ -844,7 +841,7 @@ Allows the assigned signer to digitally sign the document using drag-and-drop pl
 
 
 
-🗑 Delete Document
+## 🗑 Delete Document
 
 <img src="./screenshots/document/DocumentDeleteButton.png" width="800"/> 
 
@@ -860,9 +857,9 @@ Allows document owner to permanently delete a document.
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-📄 Status Lifecycle
+## 📄 Status Lifecycle
 
-🔄 Document Status Transition
+### 🔄 Document Status Transition
 
 
 
@@ -870,11 +867,11 @@ PENDING → SIGNED
 
 
 
-Before Signature (PENDING)
+## Before Signature (PENDING)
 
 <img src="./screenshots/document/StatusBeforeSignature.png" width="800"/>
 
-After Signature (SIGNED)
+## After Signature (SIGNED)
 
 <img src="./screenshots/document/StatusAfterSignature.png" width="800"/>
 
@@ -890,11 +887,11 @@ The system continuously checks whether all required signers have signed the docu
 
 
 
-Database Design
+## Database Design
 
 
 
-1\. Introduction
+## 1\. Introduction
 
 
 
@@ -908,9 +905,9 @@ The database schema follows normalized relational design principles to maintain 
 
 
 
-2\. Core Tables
+## 2\. Core Tables
 
-2.1 Users Table
+### 2.1 Users Table
 
 The Users table stores all registered users who can upload documents or participate in signing workflows.
 
@@ -948,7 +945,7 @@ Constraints
 
 
 
-2.2 Documents Table
+### 2.2 Documents Table
 
 The Documents table stores metadata about uploaded PDF files and tracks their lifecycle status.
 
@@ -982,13 +979,13 @@ Functional Role
 
 •	Controls document-level status transitions
 
-Status Lifecycle
+## Status Lifecycle
 
-PENDING → SIGNED
+### PENDING → SIGNED
 
 
 
-2.3 Document\_Signers Table
+###  2.3 Document\_Signers Table
 
 The Document\_Signers table manages the sequential multi-signer workflow.
 
@@ -1031,8 +1028,7 @@ Workflow Control Logic
 This table forms the core workflow control mechanism.
 
 
-
-2.4 Audit\_Logs Table
+###  2.4 Audit\_Logs Table
 
 
 
@@ -1064,11 +1060,11 @@ Functional Role
 
 
 
-3\. Relationship Overview
+## 3\. Relationship Overview
 
 
 
-3.1 User → Uploads → Document
+### 3.1 User → Uploads → Document
 
 
 
@@ -1082,7 +1078,7 @@ Users (1) → Documents (Many)
 
 
 
-3.2 Document → Has → Multiple Signers
+### 3.2 Document → Has → Multiple Signers
 
 
 
@@ -1096,7 +1092,7 @@ Documents (1) → Document\_Signers (Many)
 
 
 
-3.3 Document → Has → Audit Logs
+### 3.3 Document → Has → Audit Logs
 
 
 
@@ -1110,7 +1106,7 @@ Documents (1) → Audit\_Logs (Many)
 
 
 
-4\. Transaction Management
+## 4\. Transaction Management
 
 
 
@@ -1128,11 +1124,11 @@ This ensures atomicity and prevents partial updates.
 
 
 
-5\. Data Integrity \& Constraints
+## 5\. Data Integrity \& Constraints
 
 
 
-The database enforces:
+### The database enforces:
 
 •	Primary key constraints
 
@@ -1146,7 +1142,7 @@ The database enforces:
 
 
 
-These mechanisms ensure:
+### These mechanisms ensure:
 
 •	Referential integrity
 
@@ -1160,9 +1156,7 @@ These mechanisms ensure:
 
 
 
-&nbsp;Future Enhancements
-
-
+## Future Enhancements
 
 •	Email notification system
 
@@ -1179,6 +1173,7 @@ These mechanisms ensure:
 •	Admin dashboard
 
 •	Role-based management
+
 
 The Document SignatureSystem can be further enhanced with additional enterprise-level capabilities.
 
@@ -1214,7 +1209,7 @@ These enhancements can transform the system into a full-scale enterprise digital
 
 
 
-Conclusion
+## Conclusion
 
 
 
