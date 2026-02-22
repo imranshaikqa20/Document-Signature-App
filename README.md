@@ -1,6 +1,6 @@
 
 
-<h1 align="center"># 📄 Document Signature App
+<h1 align="center">📄 Document Signature App</h1>
 
 
 
@@ -603,8 +603,9 @@ Offer secure logout functionality
 
 <img src="./screenshots/document/UploadDocumentDetailsPage.png" width="800"/> 
 
-<img src="./screenshots/document/UploadDocumentSuccessfully.png" width="800"/>
+<img src="./screenshots/document/UploadDocumentSuccessStatus.png" width="800"/>
 
+<img src="./screenshots/document/UploadedDocumentSuccessfully.png" width="800"/>
 
 
 
@@ -719,7 +720,7 @@ Helps users quickly identify documents that require action.
 
 ### 📌 Status Filter Buttons (SIGNED)
 
-<img src="./screenshots/dashboard/StatusFilterButtonSigned.png" width="800"/>
+<img src="./screenshots/dashboard/StatusFilter ButtonSigned" width="800"/>
 
 
 
@@ -913,7 +914,7 @@ The Users table stores all registered users who can upload documents or particip
 
 
 
-Key Attributes
+### Key Attributes
 
 •	id – Primary Key
 
@@ -925,7 +926,7 @@ Key Attributes
 
 •	created\_at – Registration timestamp
 
-Functional Role
+### Functional Role
 
 •	Manages authentication and authorization
 
@@ -935,7 +936,7 @@ Functional Role
 
 •	Links user identity to audit logs
 
-Constraints
+### Constraints
 
 •	Email must be unique
 
@@ -951,7 +952,7 @@ The Documents table stores metadata about uploaded PDF files and tracks their li
 
 
 
-Key Attributes
+### Key Attributes
 
 •	id – Primary Key
 
@@ -969,7 +970,7 @@ Key Attributes
 
 •	signed\_at – Final signing timestamp
 
-Functional Role
+### Functional Role
 
 •	Maintains document lifecycle
 
@@ -991,7 +992,7 @@ The Document\_Signers table manages the sequential multi-signer workflow.
 
 
 
-Key Attributes
+### Key Attributes
 
 •	id – Primary Key
 
@@ -1005,7 +1006,7 @@ Key Attributes
 
 •	signed\_at – Timestamp of signature
 
-Functional Role
+### Functional Role
 
 •	Enforces signing order
 
@@ -1015,7 +1016,7 @@ Functional Role
 
 •	Tracks individual signer completion
 
-Workflow Control Logic
+### Workflow Control Logic
 
 •	First signer → PENDING
 
@@ -1036,7 +1037,7 @@ The Audit\_Logs table records all significant document-related activities.
 
 
 
-Key Attributes
+### Key Attributes
 
 •	id – Primary Key
 
@@ -1048,7 +1049,7 @@ Key Attributes
 
 •	performed\_at – Timestamp
 
-Functional Role
+### Functional Role
 
 •	Maintains document activity history
 
@@ -1112,7 +1113,7 @@ Documents (1) → Audit\_Logs (Many)
 
 All critical operations are executed within database transactions to ensure consistency.
 
-Examples:
+### Examples:
 
 • Uploading a document creates entries in Documents, Document\_Signers, and Audit\_Logs
 
