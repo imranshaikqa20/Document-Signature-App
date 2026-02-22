@@ -8,13 +8,13 @@
 
 
 
-The Document Signature Workflow System is a full-stack web application designed to digitize and automate document approval and signing processes. It enables secure uploading of PDF documents, assignment of multiple signers in a defined sequence, and digital signing through an intuitive drag-and-drop interface.
+The Document Signature Application is a full-stack web application designed to digitize and automate document approval and signing processes. It enables secure uploading of PDF documents, assignment of multiple signers in a defined sequence, and digital signing through an intuitive drag-and-drop interface.
 
 The system enforces a structured sequential signing workflow, ensuring that documents are signed in a predefined order while maintaining full traceability of actions through audit logging.
 
 This application is built to simulate real-world enterprise document workflow systems and demonstrates how modern organizations can eliminate manual paperwork by implementing secure digital approval mechanisms.
 
-The system ensures:
+### The system ensures:
 
 • Only authenticated users can access the platform
 
@@ -47,11 +47,11 @@ These controls prevent:
 
 
 
-The Document Signature Workflow System is a full-stack web application designed to streamline digital document approvals through a secure, structured, and automated signing process.
+The Document Signature Application is a full-stack web application designed to streamline digital document approvals through a secure, structured, and automated signing process.
 
 This application enables users to manage the complete lifecycle of a document — from upload to final signature — while enforcing workflow rules, maintaining security controls, and ensuring full audit traceability.
 
-This application allows users to:
+### This application allows users to:
 
 •	Upload PDF documents
 
@@ -65,7 +65,7 @@ This application allows users to:
 
 •	Download signed documents
 
-The system enforces:
+### The system enforces:
 
 •	Sequential signing workflow
 
@@ -75,7 +75,7 @@ The system enforces:
 
 •	Backend PDF manipulation using image embedding
 
-It combines:
+### It combines:
 
 Frontend (React)
 
@@ -91,7 +91,7 @@ PDF Processing (Apache PDFBox)
 
 In modern digital environments, organizations increasingly rely on automated systems to manage document approvals and signatures. As businesses shift toward remote operations and distributed teams, the need for secure, paperless, and trackable document workflows has become critical.
 
-Organizations require:
+### Organizations require:
 
 • Paperless document signing
 
@@ -103,7 +103,7 @@ Organizations require:
 
 • Multi-party authorization with controlled workflow
 
-Traditional signing methods —
+### Traditional signing methods —
 
 • Slow and time-consuming
 
@@ -117,7 +117,7 @@ Traditional signing methods —
 
 These limitations create delays in business operations, increase administrative overhead, and reduce transparency in approval processes.It demonstrates real-world enterprise workflow implementation using scalable architecture.The motivation behind this project is to design and implement a secure digital system that replicates structured enterprise-level approval workflows while eliminating the inefficiencies of manual document handling.
 
-This project addresses these issues by implementing:
+### This project addresses these issues by implementing:
 
 • Digital PDF embedding of signatures
 
