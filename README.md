@@ -835,10 +835,8 @@ Allows users to create a digital signature using styled text.
 🖱 Sign Document (Drag \& Drop Signature)
 
 <img src="./screenshots/signature/DragAndDrop.png" width="800"/>
-
-&nbsp;<img src="./screenshots/signature/SignatureOneAddedSuccessfully.png" width="800"/>
-
-&nbsp;<img src="./screenshots/signature/SignatureTwoAddedSuccessfully.png" width="800"/>
+<img src="./screenshots/signature/SignatureOneAddeddSuccessfully.png" width="800"/>
+<img src="./screenshots/signature/SignatureTwoAddeddSuccessfully.png" width="800"/>
 
 
 
